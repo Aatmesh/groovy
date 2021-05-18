@@ -1,10 +1,21 @@
-pipeline {
-         agent any
-         stages{
-                 stage("Git Checkout") {
-                 steps {
-                    git credentialsId: 'github', url: 'https://github.com/Aatmesh/groovy.git'
-                    }
-                    }
-                 }
-               }
+pipeline { 
+agent any 
+    stages { 
+        stage ('Build') { 
+ 
+        }
+        stage ('Test') { 
+        
+        }
+        stage ('QA') { 
+        
+        }
+        stage ('Deploy') { 
+        
+        }
+        stage ('Monitor') { 
+ 
+        }
+ 
+    }           
+ }
