@@ -1,27 +1,7 @@
 #!/usr/bin/env groovy
 
-// Pipeline
 pipeline {
-    agent {
-        node {
-            label "master"
-        }
-    }
-    options {
-        buildDiscarder(logRotator(numToKeepStr: '20', artifactNumToKeepStr: '20'))
-        timestamps()
-        skipStagesAfterUnstable()
-        disableConcurrentBuilds()
-    }
-    tools {nodejs "NodeJS 12.18.3"}
-    environment {
-        APP_NAME = 'UB - Web'
-        BUILD_ENVIRONMENT = 'UAT'
-        GIT_URL = 'https://github.com/Aatmesh/groovy.git'
-        GIT_CREDENTIALS_ID = "aatmesh"
-        EMAIL_RECIPIENTS = "aatmesh.kedar@vernost.in"
-        REPLY_TO_RECIPIENTS = "aatmesh.kedar@vernost.in"
-    }
+         agent any
          stages {
                  stage('One') {
                  steps {
