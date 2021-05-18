@@ -6,6 +6,11 @@ pipeline {
                      echo 'Hi, this is Zulaikha from edureka'
                  }
                  }
+                 stage("Git Checkout") {
+                 steps {
+                    git credentialsId: 'github', url: 'https://github.com/Aatmesh/groovy.git'
+                    }
+                    }
                  stage('Two') {
                  steps {
                     input('Do you want to proceed?')
