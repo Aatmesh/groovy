@@ -8,8 +8,8 @@ pipeline {
     tools {nodejs 'node'}
     environment {
         APP_NAME = 'Vetravel - Web'
-        GIT_URL = 'https://vernost123@bitbucket.org/vernosteam/vtravel-frontend-hotel-app.git'
-        GIT_CREDENTIALS_ID = "be882718-d211-4233-b8be-30c96afebad5"
+        GIT_URL = 'https://github.com/Aatmesh/groovy.git'
+        GIT_CREDENTIALS_ID = "Aatmesh"
         EMAIL_RECIPIENTS = "aatmesh.kedar@vernost.in"
         REPLY_TO_RECIPIENTS = "aatmesh.kedar@vernost.in"
         
