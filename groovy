@@ -12,13 +12,7 @@ pipeline {
         GIT_CREDENTIALS_ID = "be882718-d211-4233-b8be-30c96afebad5"
         EMAIL_RECIPIENTS = "aatmesh.kedar@vernost.in"
         REPLY_TO_RECIPIENTS = "aatmesh.kedar@vernost.in"
-        S3_BUCKET = "shantibuildupload"
-        S3_REGION = "us-east-1"
-        S3_FILE1 = "build.zip"
-        S3_PROFILE_NAME = "shantibuildupload"
-        AWS_PROFILE_NAME = "shantikumar"
-        AWS_PROFILE_REGION = "us-east-1"
-        AWS_AUTO_SCALE_GRP_NAME = "uaeexchange-asg-test"
+        
     }
     parameters {
         string(defaultValue: 'master/*', description: 'This parameter is used to identify the branch on which the build is created', name: 'BranchName', trim: true)
